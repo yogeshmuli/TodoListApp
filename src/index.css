@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh !important;
+  background-color: #AEB6BF!important
+}
+
+.bodycolor{
+  background-color: #AEB6BF !important
+}
+
+code {
+  font-family: 'Roboto', sans-serif;
+}
+.fullwidth{
+  width:100% !important
+}
+.buttonclass{
+  background-color: rgb(52, 58, 64) !important;
+  color:blanchedalmond !important;
+  font-family: 'Roboto', sans-serif !important;
+}

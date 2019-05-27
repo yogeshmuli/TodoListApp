@@ -1,0 +1,25 @@
+
+.taskCard{
+    margin:auto;
+    width: 75%;
+    text-align:left;
+    margin-top:10px
+}
+.High{
+    background-color:#ED5644 !important;
+    font-family: 'Roboto', sans-serif;
+
+}
+.Medium{
+    background-color:#EDE244 !important;
+    font-family: 'Roboto', sans-serif;
+}
+.Low{
+    background-color:#7DED44!important;
+    font-family: 'Roboto', sans-serif;
+}
+.background{
+    background-color: rgb(52, 58, 64);
+    color: blanchedalmond;
+    font-family: 'Roboto', sans-serif;
+}

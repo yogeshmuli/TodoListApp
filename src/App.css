@@ -1,0 +1,13 @@
+.leftPadding{
+  padding-left: 50px
+}
+.App{
+  display: initial;
+}
+.center{
+  margin: auto
+}
+.imgSizer{
+  height:300px;
+  width:300px
+}

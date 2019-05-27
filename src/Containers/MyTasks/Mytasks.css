@@ -1,0 +1,46 @@
+.auto-width{
+    max-width: auto;
+    width:auto !important
+}
+.close{
+    color: blanchedalmond
+}
+.sidemargin{
+    margin:0px 4px 0px 0px
+}
+.searchdiv{
+    justify-self: center;
+    margin: auto;
+    background-color: rgb(52, 58, 64);
+    width:max-content;
+    height: max-content;
+    border-radius: 15px
+}
+.searchinput{
+    background-color: rgb(52, 58, 64);
+    border-style: hidden;
+    padding:2px;
+    padding-left:20px;
+    border-radius: 15px;
+    text-align: left;
+    width:120px;
+    color:blanchedalmond
+
+}
+.searchinput:focus{
+    outline: none;
+    background-color: rgb(52, 58, 64);
+    border-style: hidden;
+    padding:2px;
+    padding-left:20px;
+    border-radius: 15px;
+    text-align: left;
+    width:120px;
+    color:blanchedalmond
+}
+.center{
+    margin: auto
+}
+
+
+

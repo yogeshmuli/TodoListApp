@@ -16,7 +16,7 @@ import { Sidebar, Segment, Icon } from "semantic-ui-react";
 import Menu from "./Components/Menu";
 import {useState}from "react"
 import Mytasks from './Containers/MyTasks/Mytasks';
-
+import LoginPage from "../src/Containers/LoginPage/LoginPage"
 
 
 
@@ -71,7 +71,8 @@ function App() {
         <Navbar style={navbarstyle} variant="dark">
           <Button style={buttonStyle} onClick={ShowhideMenu}><Icon name="bars"></Icon></Button>
           <Nav className="mr-auto">
-            <NavLink style={navbarstyle} className="px-3" to="/">Home</NavLink>
+            <NavLink style={navbarstyle} className="px-3" to="/">Login</NavLink>
+            <NavLink style={navbarstyle} className="px-3" to="/Home">Home</NavLink>
             <NavLink style={navbarstyle} className="px-3" to="/Mytask">My task</NavLink>
             <NavLink style={navbarstyle} className="px-3" to="/CompletedTask">Completed Tasks</NavLink>
             <NavLink style={navbarstyle} className="px-2" to="/FormValidation">Form Validation</NavLink>
@@ -80,7 +81,8 @@ function App() {
         <div style={classdiv}>
         <Menu show={state}></Menu>
         <Switch>
-        <Route path="/" exact component={Home} ></Route>
+        <Route path="/" exact component={LoginPage} ></Route>
+        <Route path="/Home" exact component={Home} ></Route>
         <Route path="/Mytask"  component={ImportMyTask} ></Route>
         <Route path="/CompletedTask" exact component={CompletedTask} ></Route>
         <Route path="/FormValidation" exact component={FormValidation} ></Route>

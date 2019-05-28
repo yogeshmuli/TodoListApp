@@ -25,7 +25,8 @@ class Menu extends Component {
             menu=
             <div style={this.fullheight}>
                 <Listgroup variant="flush">
-                    <Listgroup.Item style={this.linkstyle}><NavLink style={this.linkstyle} to="/">Home</NavLink></Listgroup.Item>
+                    <Listgroup.Item style={this.linkstyle}><NavLink style={this.linkstyle} to="/">Login</NavLink></Listgroup.Item>
+                    <Listgroup.Item style={this.linkstyle}><NavLink style={this.linkstyle} to="/Home">Home</NavLink></Listgroup.Item>
                     <Listgroup.Item style={this.linkstyle}><NavLink style={this.linkstyle} to="/Mytask">My task</NavLink></Listgroup.Item>
                     <Listgroup.Item style={this.linkstyle}><NavLink style={this.linkstyle} to="/CompletedTask">Completed Tasks</NavLink></Listgroup.Item>
                     <Listgroup.Item style={this.linkstyle}><NavLink style={this.linkstyle} to="/FormValidation">Form Validation</NavLink></Listgroup.Item>

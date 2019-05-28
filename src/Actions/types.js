@@ -19,6 +19,9 @@ export const Update_Task_Status_Success = "Update_Task_Status_Success";
 export const Update_Task_Status_Failure = "Update_Task_Status_Failure";
 export const Edit_Task = "Edit_Task";
 export const Edit_Task_Success = "Edit_Task_Success";
-export const Edit_task_Failure = "Edit_Task_Failure"
+export const Edit_task_Failure = "Edit_Task_Failure";
+export const User_Login="User_Login";
+export const User_Login_Success = "User_Login_Success";
+export const User_Login_Failure = "User_Login_Failure"
 
 

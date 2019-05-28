@@ -57,7 +57,7 @@ function App() {
     backgroundColor: "rgb(52, 58, 64)",
     color: "blanchedalmond",
     borderStyle: "none",
-    outline: "none,",
+    outline: "none",
     marginRight: "5px",
 
   }
@@ -69,9 +69,9 @@ function App() {
 
       <Router>
         <Navbar style={navbarstyle} variant="dark">
-          <Button style={buttonStyle} onClick={ShowhideMenu}><Icon name="bars"></Icon></Button>
+          <Button style={buttonStyle} className="buttonclassA" onClick={ShowhideMenu}><Icon name="bars"></Icon></Button>
           <Nav className="mr-auto">
-            <div className="row">
+            <div className="row displayclass">
               <NavLink style={navbarstyle} className="px-3" to="/">Login</NavLink>
               <NavLink style={navbarstyle} className="px-3" to="/Home">Home</NavLink>
               <NavLink style={navbarstyle} className="px-3" to="/Mytask">My task</NavLink>

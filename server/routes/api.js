@@ -67,5 +67,15 @@ router.post("/edittask", (req, res) => {
     res.send("task edited success")
 })
 
+router.post("/login",(req,res)=>{
+    console.log(req.body)
+    if(req.body.username=="Yogeshmuli"&&req.body.password=="yogesh"){
+        res.json({authencated:true})
+    }
+    else{
+        res.json({authencated:false})
+    }
+})
+
 
 module.exports = router

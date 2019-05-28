@@ -18,8 +18,23 @@ code {
 .fullwidth{
   width:100% !important
 }
-.buttonclass{
+.buttonclassA{
   background-color: rgb(52, 58, 64) !important;
   color:blanchedalmond !important;
   font-family: 'Roboto', sans-serif !important;
+  outline:none !important;
+  
+}
+.buttonclassA:hover {outline:none !important;
+  background-color: blue;
+  box-shadow: none !important;
+  border:none !important;
+  
+}
+
+.buttonclassA:active {outline:none !important;
+  background-color: blue;
+  box-shadow: none !important;
+  border:none !important;
+  
 }

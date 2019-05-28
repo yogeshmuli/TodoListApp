@@ -7,7 +7,8 @@ import {
     Remove_Task, Remove_Task_Failure, Remove_Task_Success,
     Get_Completed_Tasks, Get_Completed_Tasks_Success, Get_Completed_Tasks_Failure,
     Update_Task_Status, Update_Task_Status_Failure, Update_Task_Status_Success,
-    Edit_Task, Edit_Task_Success, Edit_task_Failure
+    Edit_Task, Edit_Task_Success, Edit_task_Failure,
+    User_Login,User_Login_Failure,User_Login_Success
 } from "../Actions/types";
 import axios from "axios";
 import{appconfig} from "../config/config"
@@ -104,6 +105,19 @@ function* Edit_Task_call(action) {
         console.log(error)
     }
 }
+function * User_Login_call(action){
+    try{
+        const response= yield call(axios.post, `http://${appconfig.serverIp}:3005/api/login`,action.payload)
+        if(response){
+            console.log("response from login function",response.data)
+            yield put({type:User_Login_Success,payload:response.data.authencated})
+        }
+    }
+    catch(err){
+        yield put({type:User_Login_Failure})
+        console.log(err)
+    }
+}
 
 export function* watchAction() {
     yield takeEvery(Test_Action, testApiCall)
@@ -113,4 +127,5 @@ export function* watchAction() {
     yield takeEvery(Get_Completed_Tasks, Get_Completed_Tasks_call)
     yield takeEvery(Update_Task_Status, Update_Task_Status_call)
     yield takeEvery(Edit_Task, Edit_Task_call)
+    yield takeEvery(User_Login,User_Login_call)
 }

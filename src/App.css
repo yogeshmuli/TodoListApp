@@ -11,3 +11,11 @@
   height:300px;
   width:300px
 }
+.displayclass{
+  display:flex !important
+}
+@media screen and (max-width:400px){
+  .displayclass{
+    display:none !important
+  }
+}
